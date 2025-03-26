@@ -9,7 +9,8 @@ body {
 }
 
 nav {
-    justify-self: flex-end;
+    justify-content: flex-end;
+    display: flex;
 }
 
 nav ul {
@@ -29,22 +30,36 @@ li a {
 section {
     display: flex;
     justify-content: space-between;
+    margin: 15px;
 }
 
 section.upperhalf {
     flex-direction: column;
+    max-width: 30%;
+    justify-self: center;
 }
 
 section.lowerhalf {
     flex-direction: row;
+    justify-items: stretch;
 }
 
 article.featuredrecipe {
-    max-width: 40%;
+    min-width: 40%
+}
+
+article.featuredrecipe img {
+    float: left;
+    margin: 5px;
+}
+
+article.featuredrecipe p {
+    float: right;
+    margin: 5px;
 }
 
 article.selectedingredients {
-    max-width: 40%;
+    min-width: 40%;
     float: right;
     border: 2px solid black;
 }
