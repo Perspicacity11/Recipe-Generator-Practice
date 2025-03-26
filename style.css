@@ -8,25 +8,43 @@ body {
     flex-direction: column;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+nav {
+    justify-self: flex-end;
 }
 
-section.logoandsearch {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+  
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+section {
     display: flex;
+    justify-content: space-between;
+}
+
+section.upperhalf {
     flex-direction: column;
-    justify-content: center;
-    margin: 15px;
 }
 
 section.lowerhalf {
-    display: flex;
     flex-direction: row;
-    margin: 10px;
 }
 
-nav {
+article.featuredrecipe {
+    max-width: 40%;
+}
+
+article.selectedingredients {
+    max-width: 40%;
     float: right;
+    border: 2px solid black;
 }
