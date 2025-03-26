@@ -8,27 +8,64 @@ body {
     flex-direction: column;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+nav {
+    justify-content: flex-end;
+    display: inline-flex;
 }
 
-section.logoandsearch {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+  
+nav li {
+    display: inline;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+ol {
+    display: block;
+}
+
+section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     margin: 15px;
 }
 
-section.lowerhalf {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
+section.upperhalf {
+    flex-direction: column;
+    max-width: 30%;
+    justify-self: center;
 }
 
-nav {
+section.lowerhalf {
+    flex-direction: row;
+    justify-items: stretch;
+}
+
+article.featuredrecipe {
+    min-width: 40%
+}
+
+article.featuredrecipe img {
+    float: left;
+    margin: 5px;
+}
+
+article.featuredrecipe p {
     float: right;
+    margin: 5px;
+}
+
+article.selectedingredients {
+    min-width: 40%;
+    float: right;
+    border: 2px solid black;
 }
 
 h1 {

@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <nav style="display: inline;">
-        <a href="#">Home</a>
-        <a href="#">About us</a>
-        <a href="#">View all recipes</a>
-        <a href="#">Sign up</a>
-        <a href="#">Sign in</a>
+
+    <nav>
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">View all recipes</a></li>
+        <li><a href="#">Sign up</a></li>
+        <li><a href="#">Sign in</a></li>
+        </ul>
     </nav>
+
     <main>
-    <section class="logoandsearch">
-        <img src="images/chef.jpg" alt="website logo, stylised chefs hat" style="width: 150px">
+
+    <section class="upperhalf">
+        <img src="images/chef.jpg" alt="website logo, stylised chefs hat">
         <br>
-        <input type="text" placeholder="Search.." style="width: 300px">
+        <input type="text" placeholder="Search..">
     </section>
+
     <hr>
+
     <section class="lowerhalf">
-        <article class="featuredrecipe">
+
+        <article class="featuredrecipe" style="width: 40%;">
             <img src="images/alforno.jpeg" alt="image of recipe of the day">
-            <h2>Chicken pasta al forno</h2>
-            <p1>[TOP LEVEL SUMMARY]</p1>
-            <p2>[INGREDIENTS] [INSTRUCTIONS]</p2>
+            <b><p1>Chicken pasta al forno</p1></b><br>
+            <p2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores voluptatibus nihil corrupti saepe doloremque nesciunt iusto, rerum suscipit animi, tempore quae libero temporibus quaerat eligendi commodi sequi! Natus, reiciendis non.</p2>
         </article>
-        <article class="dropdown">
-            <ul>
+
+        <article class="selectedingredients" style="width: 40%;">
+            <ol>
                 <li>Chicken breast</li>
                 <li>White rice</li>
                 <li>Broccoli</li>
                 <li>Salt</li>
                 <li>Thyme</li>
-            </ul>
+            </ol>
         </article>
+
     </section>
+
     </main>
+
 </body>
 </html>
